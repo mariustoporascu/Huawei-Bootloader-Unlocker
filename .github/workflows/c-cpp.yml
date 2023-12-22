@@ -17,11 +17,11 @@ jobs:
       uses: actions/checkout@v3
       
     - name: Compile .c file
-      run: gcc huawei_bootloader_unlocker.c -o huawei_bootloader_unlocker
+      run: gcc huawei_bootloader_unlocker.c -o huawei_bootloader_unlocker.exe
       
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: huawei_bootloader_unlocker
-        path: ./huawei_bootloader_unlocker
+        name: huawei_bootloader_unlocker.exe
+        path: ./huawei_bootloader_unlocker.exe
       
